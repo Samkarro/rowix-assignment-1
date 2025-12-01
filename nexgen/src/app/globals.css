@@ -25,13 +25,13 @@ body {
 body {
   color: var(--NexGen-White);
   background: var(--NexGen-Black);
-  font-family: Roboto-Flex, Helvetica, sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .roboto-mono {
-  font-family: Roboto-Mono, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 * {
