@@ -1,5 +1,6 @@
 import { headerButtons } from "@/common/data/header-buttons";
 import { reasons } from "@/common/data/reasons";
+import { services } from "@/common/data/services";
 
 export default function Home() {
   return (
@@ -127,7 +128,43 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section id="services"></section>
+        <section id="services">
+          <div className="services-heading-container">
+            <h2>OUR SERVICES</h2>
+          </div>
+          <div className="services-container">
+            {services.map((service) => {
+              return (
+                <div className="service">
+                  <div className="upper-area">
+                    <div className="upper-service-left">
+                      <div className="service-image-container">
+                        <img src={service.image} />
+                      </div>
+                      <h3>{service.heading}</h3>
+                    </div>
+                    <div className="upper-service-right">
+                      <div className="open-button-container">
+                        <img
+                          alt="Open button."
+                          src="./images/top-right-arrow.png"
+                        />
+                      </div>
+                      <p
+                        className="achievement-heading roboto-mono"
+                        style={{ fontSize: "20px" }}
+                      >
+                        BOOK A CALL
+                      </p>
+                    </div>
+                  </div>
+                  <p>{service.description}</p>
+                  <p className="service-price">{service.startingPrice}</p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
         <section id="projects"></section>
         <section id="testimonials"></section>
         <section id="faq"></section>
