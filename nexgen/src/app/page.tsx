@@ -10,18 +10,22 @@ export default function Home() {
         <div className="header-buttons-container">
           {headerButtons.map((text) => {
             return (
-              <div
-                key={text}
-                id={`#${text}`}
-                className="header-button roboto-mono"
-              >
+              <div key={text} className="header-button roboto-mono">
                 {text.toUpperCase()}
               </div>
             );
           })}
         </div>
       </header>
-      <main></main>
+      <main>
+        <section id="home"></section>
+        <section id="reasons"></section>
+        <section id="services"></section>
+        <section id="projects"></section>
+        <section id="testimonials"></section>
+        <section id="faq"></section>
+        <section id="contact"></section>
+      </main>
     </div>
   );
 }
