@@ -6,6 +6,7 @@ export default function InfiniteScroll() {
       <div>
         <span>DIGITAL MARKETING</span>
         <svg
+          className="circle"
           width="7"
           height="7"
           viewBox="0 0 7 7"
@@ -16,6 +17,7 @@ export default function InfiniteScroll() {
         </svg>
         <span>WEBSITE DESIGN</span>
         <svg
+          className="circle"
           width="7"
           height="7"
           viewBox="0 0 7 7"
@@ -26,6 +28,7 @@ export default function InfiniteScroll() {
         </svg>
         <span>BRANDING</span>
         <svg
+          className="circle"
           width="7"
           height="7"
           viewBox="0 0 7 7"
@@ -36,6 +39,7 @@ export default function InfiniteScroll() {
         </svg>
         <span>WEBSITE DEVELOPMENT</span>
         <svg
+          className="circle"
           width="7"
           height="7"
           viewBox="0 0 7 7"
@@ -46,6 +50,7 @@ export default function InfiniteScroll() {
         </svg>
         <span>MOBILE APP DEVELOPMENT</span>
         <svg
+          className="circle"
           width="7"
           height="7"
           viewBox="0 0 7 7"

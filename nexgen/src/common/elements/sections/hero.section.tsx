@@ -1,3 +1,4 @@
+import OpenCircle from "../../../../public/svg/open-circle";
 import "../../styles/hero.styles.css";
 import InfiniteScroll from "../infinite-scroll";
 
@@ -9,10 +10,11 @@ export default function Hero() {
           <div className="about-container gray-box">
             <div className="about-headings-container">
               {/* TODO: fiddle around with the svg */}
-              <h1 className="about-header">
-                DIGITAL SOLUTIONS <svg />
+              <h1 className="about-heading">
+                DIGITAL SOLUTIONS <OpenCircle></OpenCircle>{" "}
+                <p className="open-circle-text clickable">start a project</p>
               </h1>
-              <h1 className="about-header">THAT DRIVE SUCCESS</h1>
+              <h1 className="about-heading">THAT DRIVE SUCCESS</h1>
               <p className="about-subheading">
                 At NexGen, we believe in the transformative power of digital
                 solutions. Our team of experts is dedicated to helping
