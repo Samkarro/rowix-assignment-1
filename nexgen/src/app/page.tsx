@@ -1,9 +1,9 @@
-import { headerButtons } from "@/common/data/header-buttons";
 import { projects } from "@/common/data/projects";
 import { reasons } from "@/common/data/reasons";
 import { services } from "@/common/data/services";
 import { socials } from "@/common/data/socials";
 import { testimonials } from "@/common/data/testimonials";
+import NexGenHeader from "@/common/elements/header";
 import NewsletterForm from "@/common/elements/newsletter-form";
 import QuestionForm from "@/common/elements/question-form";
 import QuestionList from "@/common/elements/question-list";
@@ -11,20 +11,7 @@ import QuestionList from "@/common/elements/question-list";
 export default function Home() {
   return (
     <div>
-      <header>
-        <div className="header-logo-container">
-          <img alt="NexGen Logo." src="./images/nexgen.png" />
-        </div>
-        <div className="header-buttons-container">
-          {headerButtons.map((text) => {
-            return (
-              <div key={text} className="header-button roboto-mono">
-                {text.toUpperCase()}
-              </div>
-            );
-          })}
-        </div>
-      </header>
+      <NexGenHeader />
       <main>
         <section id="hero">
           <div className="hero-container">
