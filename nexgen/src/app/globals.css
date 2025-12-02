@@ -28,6 +28,7 @@ body {
   font-family: "Roboto Flex", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 30px 0px 50px 0px;
 }
 
 .roboto-mono {
@@ -46,4 +47,19 @@ a {
 
 textarea {
   resize: none;
+}
+
+.gray-box {
+  background-color: var(--NexGen-Dark-10);
+  transition: 200ms;
+}
+
+.gray-box:hover {
+  background-color: var(--NexGen-Dark-12);
+
+  transition: 200ms;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }
