@@ -1,4 +1,5 @@
 import "../../styles/hero.styles.css";
+import InfiniteScroll from "../infinite-scroll";
 
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-top-container">
           <div className="about-container gray-box">
-            <div className="about-headers-container">
+            <div className="about-headings-container">
               {/* TODO: fiddle around with the svg */}
               <h1 className="about-header">
                 DIGITAL SOLUTIONS <svg />
@@ -20,17 +21,7 @@ export default function Hero() {
               </p>
             </div>
             {/* TODO: implement scrolling banner */}
-            <div className="scrolling-banner">
-              <svg
-                width="7"
-                height="7"
-                viewBox="0 0 7 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="3.5" cy="3.5" r="3.5" fill="#CE7D63" />
-              </svg>
-            </div>
+            <InfiniteScroll />
           </div>
           <div className="featured-product">
             <div className="image-container">

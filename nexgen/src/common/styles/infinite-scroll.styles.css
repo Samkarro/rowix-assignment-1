@@ -1,0 +1,58 @@
+.scroll {
+  position: relative;
+
+  width: 100%;
+  overflow: hidden;
+  --t: 20s;
+
+  background-color: var(--NexGen-Black);
+
+  border-radius: 12px;
+
+  margin-top: 90px;
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: animate var(--t) linear infinite;
+  display: flex;
+  align-items: center;
+}
+
+.scroll div:nth-child(2) {
+  animation: animate2 var(--t) linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.scroll div span {
+  display: inline-flex;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: var(--NexGen-Grey-40);
+  transition: 0.5s;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
