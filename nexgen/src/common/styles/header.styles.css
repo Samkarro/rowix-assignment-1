@@ -1,5 +1,5 @@
 header {
-  width: calc(100% - 3rem); /* always leave 1rem on each side */
+  width: calc(100% - 3rem);
   max-width: 1820px;
   height: 111px;
   display: flex;
@@ -9,6 +9,7 @@ header {
 
   border-radius: 16px;
   padding: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .header-logo-container {
@@ -74,6 +75,7 @@ header {
   header {
     height: calc(111px * 0.8);
     padding: calc(1.5rem * 0.8);
+    margin-bottom: calc(20px * 0.8);
   }
 
   .header-logo-container {
@@ -95,4 +97,22 @@ header {
     font-size: calc(18px * 0.8);
     border-radius: calc(12px * 0.8);
   }
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+}
+
+.open-circle-text {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  margin-left: 8px;
+
+  color: var(--NexGen-Orange-60);
 }

@@ -1,0 +1,87 @@
+.scroll {
+  position: relative;
+
+  justify-self: end;
+  width: 100%;
+  max-width: 1167px;
+  min-width: 0;
+
+  overflow: hidden;
+  --t: 20s;
+
+  background-color: var(--NexGen-Black);
+
+  border-radius: 12px;
+
+  margin-top: 90px;
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: animate var(--t) linear infinite;
+  display: flex;
+  align-items: center;
+}
+
+.scroll div:nth-child(2) {
+  animation: animate2 var(--t) linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.scroll div span {
+  display: inline-flex;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: var(--NexGen-Grey-40);
+  transition: 0.5s;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.circle {
+  min-height: 7px;
+  min-width: 7px;
+}
+
+@media (max-width: 1536px) {
+  .scroll {
+    max-width: calc(1167px * 0.8);
+    margin-top: calc(90px * 0.8);
+    border-radius: calc(12px * 0.8);
+  }
+
+  .scroll div span {
+    margin: calc(10px * 0.8);
+    padding: calc(5px * 0.8) calc(10px * 0.8);
+    font-size: calc(20px * 0.8);
+    border-radius: calc(5px * 0.8);
+  }
+
+  .circle {
+    min-width: calc(7px * 0.8);
+    min-height: calc(7px * 0.8);
+  }
+}
