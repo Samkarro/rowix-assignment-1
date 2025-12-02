@@ -43,3 +43,7 @@ body {
 a {
   color: inherit;
 }
+
+textarea {
+  resize: none;
+}

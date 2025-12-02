@@ -3,6 +3,8 @@ import { projects } from "@/common/data/projects";
 import { reasons } from "@/common/data/reasons";
 import { services } from "@/common/data/services";
 import { testimonials } from "@/common/data/testimonials";
+import QuestionForm from "@/common/elements/question-form";
+import QuestionList from "@/common/elements/question-list";
 
 export default function Home() {
   return (
@@ -296,7 +298,27 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section id="faq"></section>
+        <section id="faq">
+          <div className="faq-heading-container">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            {/* TODO: make this a module */}
+            <div className="upper-service-right">
+              <div className="open-button-container">
+                <img alt="Open button." src="./images/top-right-arrow.png" />
+              </div>
+              <p
+                className="achievement-heading roboto-mono"
+                style={{ fontSize: "20px" }}
+              >
+                DETAILS
+              </p>
+            </div>
+          </div>
+          <div className="faq-bottom">
+            <QuestionList />
+            <QuestionForm />
+          </div>
+        </section>
         <section id="contact"></section>
       </main>
     </div>
