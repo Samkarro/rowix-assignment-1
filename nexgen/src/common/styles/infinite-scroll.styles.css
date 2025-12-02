@@ -1,7 +1,11 @@
 .scroll {
   position: relative;
 
+  justify-self: end;
+  width: 100%;
   max-width: 1167px;
+  min-width: 0;
+
   overflow: hidden;
   --t: 20s;
 
@@ -60,4 +64,24 @@
 .circle {
   min-height: 7px;
   min-width: 7px;
+}
+
+@media (max-width: 1536px) {
+  .scroll {
+    max-width: calc(1167px * 0.8);
+    margin-top: calc(90px * 0.8);
+    border-radius: calc(12px * 0.8);
+  }
+
+  .scroll div span {
+    margin: calc(10px * 0.8);
+    padding: calc(5px * 0.8) calc(10px * 0.8);
+    font-size: calc(20px * 0.8);
+    border-radius: calc(5px * 0.8);
+  }
+
+  .circle {
+    min-width: calc(7px * 0.8);
+    min-height: calc(7px * 0.8);
+  }
 }

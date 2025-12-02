@@ -73,10 +73,25 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1536px) {
   h1 {
     font-size: calc(78px * 0.8);
     line-height: calc(150% * 0.8);
-    letter-spacing: calc(0% * 0.8); /* stays 0 but included for consistency */
+    letter-spacing: calc(0% * 0.8);
+  }
+
+  h3 {
+    font-size: calc(24px * 0.8);
+    line-height: calc(150% * 0.8);
+    letter-spacing: calc(0% * 0.8);
   }
 }

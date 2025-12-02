@@ -1,4 +1,5 @@
 import OpenCircle from "../../../../public/svg/open-circle";
+import OpenCircleForImage from "../../../../public/svg/open-circle-for-image";
 import "../../styles/hero.styles.css";
 import InfiniteScroll from "../infinite-scroll";
 
@@ -28,13 +29,15 @@ export default function Hero() {
           <div className="featured-product">
             <div className="image-container">
               {/* TODO: implement svg */}
-              <svg />
+              <div className="image-svg-wrapper clickable">
+                <OpenCircleForImage></OpenCircleForImage>
+              </div>
               <img
                 alt="Example of the Estatein Real Estate web design."
                 src="./images/featured.png"
               />
             </div>
-            <div className="featured-product-description">
+            <div className="featured-product-description gray-box">
               <h3>Estatein Real Estate</h3>
               <p>Web Development. </p>
             </div>

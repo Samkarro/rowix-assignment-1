@@ -1,5 +1,5 @@
 header {
-  width: calc(100% - 3rem); /* always leave 1rem on each side */
+  width: calc(100% - 3rem);
   max-width: 1820px;
   height: 111px;
   display: flex;
