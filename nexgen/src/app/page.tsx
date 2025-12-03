@@ -1,8 +1,7 @@
 import { socials } from "@/common/data/socials";
 import NexGenHeader from "@/common/elements/header";
 import NewsletterForm from "@/common/elements/newsletter-form";
-import QuestionForm from "@/common/elements/question-form";
-import QuestionList from "@/common/elements/question-list";
+import Faq from "@/common/elements/sections/faq.section";
 import Hero from "@/common/elements/sections/hero.section";
 import Projects from "@/common/elements/sections/projects.section";
 import Reasons from "@/common/elements/sections/reasons.section";
@@ -19,27 +18,7 @@ export default function Home() {
         <Services />
         <Projects />
         <Testimonials />
-        <section id="faq">
-          <div className="faq-heading-container">
-            <h2>FREQUENTLY ASKED QUESTIONS</h2>
-            {/* TODO: make this a module */}
-            <div className="upper-service-right">
-              <div className="open-button-container">
-                <img alt="Open button." src="./images/top-right-arrow.png" />
-              </div>
-              <p
-                className="achievement-heading roboto-mono"
-                style={{ fontSize: "20px" }}
-              >
-                DETAILS
-              </p>
-            </div>
-          </div>
-          <div className="faq-bottom">
-            <QuestionList />
-            <QuestionForm />
-          </div>
-        </section>
+        <Faq />
         <section id="contact">
           <div className="cta-section-container">
             <p className="cta-section-heading">
