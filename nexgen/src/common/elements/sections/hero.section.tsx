@@ -2,6 +2,7 @@ import OpenCircle from "../../../../public/svg/open-circle";
 import OpenCircleForImage from "../../../../public/svg/open-circle-for-image";
 import "../../styles/hero.styles.css";
 import InfiniteScroll from "../infinite-scroll";
+import OpenButton from "../open-button";
 
 export default function Hero() {
   return (
@@ -66,13 +67,14 @@ export default function Hero() {
             </p>
             <p className="achievement-amount">10+</p>
           </div>
-          <div>
-            <div className="open-button-container">
-              <img alt="Open button." src="./images/top-right-arrow.png" />
-            </div>
+          <div
+            className="achievement gray-box"
+            style={{ flexDirection: "row" }}
+          >
+            <OpenButton />
             <p
               className="achievement-heading roboto-mono"
-              style={{ fontSize: "20px" }}
+              style={{ fontSize: "20px", gap: "10px" }}
             >
               KNOW MORE
             </p>
