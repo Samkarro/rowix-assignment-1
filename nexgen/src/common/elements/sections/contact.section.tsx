@@ -22,18 +22,16 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* TODO: implement scrolling banner */}
       <InfiniteScroll type={"scroll-type-two"} />
       <div className="major-navigation-container">
         <div className="socials-container">
           {socials.map((medium) => {
             return (
-              <div className="social-medium-card">
+              <div className="social-medium-card gray-box">
                 <div className="medium-top">
                   <div className="medium-image-container">
                     <img src={medium.image} />
                   </div>
-                  {/* TODO: make this a module */}
                   <div className="upper-service-right">
                     <div className="open-button-container">
                       <img
@@ -53,7 +51,7 @@ export default function Contact() {
         </div>
         <div className="nav-and-copyright">
           {/* make this a module */}
-          <nav>
+          <nav className="gray-box">
             <div className="nav-column">
               <p className="roboto-mono">Home</p>
               <div className="nav-button-list">
@@ -94,14 +92,14 @@ export default function Contact() {
               </div>
             </div>
           </nav>
-          <div className="newsletter-container">
+          <div className="newsletter-container gray-box">
             <div className="newsletter-cta-text-container">
               <p className="newsletter-subheading">Newsletter</p>
               <h3>Subscribe to our newsletter</h3>
               <NewsletterForm />
             </div>
           </div>
-          <div className="copyright roboto-mono">
+          <div className="copyright roboto-mono gray-box">
             <p>© 2024 NextGen. All rights reserved.</p>
             <div className="copyright-buttons">
               <a>Terms & Conditions</a>

@@ -4,6 +4,7 @@
   min-width: min(1820px, calc(100% - 3rem));
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
 }
 
 .cta-section-container {
@@ -73,4 +74,25 @@
   text-transform: uppercase;
 
   color: var(--NexGen-White);
+}
+
+.major-navigation-container {
+  display: flex;
+  gap: 20px;
+}
+
+.socials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.social-medium-card {
+  border-radius: 14px;
+}
+
+.nav-and-copyright {
+  display: grid;
+  grid-template-rows: 16fr 10fr 6fr;
+  gap: 20px;
 }
