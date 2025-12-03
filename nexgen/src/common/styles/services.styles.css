@@ -45,6 +45,10 @@
   gap: 8px;
 }
 
+.upper-service-right {
+  height: min-content;
+}
+
 .upper-service-left {
   gap: 14px;
 }
