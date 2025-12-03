@@ -21,12 +21,12 @@ export default function Testimonials() {
         {testimonials.map((testimonial) => {
           return (
             <div className="testimonial">
-              <div className="testimonial-top">
+              <div className="testimonial-top gray-box">
                 <h4>{testimonial?.title}</h4>
                 <p>{testimonial?.body}</p>
               </div>
-              <div className="testimonial-bottom">
-                <div>
+              <div className="testimonial-bottom ">
+                <div className="testimonial-author-container">
                   <div className="testimonial-image-container">
                     <img src={testimonial?.author.image} />
                   </div>
@@ -39,9 +39,9 @@ export default function Testimonials() {
                     </p>
                   </div>
                 </div>
-                <div className="open-button-container">
-                  <img alt="Open button." src="./images/right-arrow.png" />
-                </div>
+                <OpenButton
+                  type={"lighter smaller testimonial-author-button"}
+                />
               </div>
             </div>
           );

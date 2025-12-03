@@ -5,8 +5,7 @@ export const testimonials = [
     author: {
       name: "Sarah Thompson",
       position: "CEO of BlueBloom",
-      //   TODO: add image
-      image: "",
+      image: "./images/people/sarah-thompson.png",
     },
   },
   {
@@ -15,8 +14,7 @@ export const testimonials = [
     author: {
       name: "Wade Warren",
       position: "Art Director",
-      //   TODO: add image
-      image: "",
+      image: "./images/people/wade-warren.png",
     },
   },
   {
@@ -25,8 +23,7 @@ export const testimonials = [
     author: {
       name: "Lisa Williams",
       position: "CEO of HealthTech",
-      //   TODO: add image
-      image: "",
+      image: "./images/people/lisa-williams.png",
     },
   },
   {
@@ -35,8 +32,7 @@ export const testimonials = [
     author: {
       name: "Jennifer Lee",
       position: "COO of Foodie Haven",
-      //   TODO: add image
-      image: "",
+      image: "./images/people/jennifer-lee.png",
     },
   },
   ,
