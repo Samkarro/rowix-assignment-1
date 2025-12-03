@@ -24,7 +24,7 @@ export default function Projects() {
               <div className="project-left gray-box">
                 <div className="project-top">
                   <div className="service-image-container">
-                    <img src={project.image} />
+                    {/* <img src={project.serviceImage} /> */}
                   </div>
                   <h3>{project.title}</h3>
                   <div className="upper-service-right">

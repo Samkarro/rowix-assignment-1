@@ -8,8 +8,7 @@ export const projects = [
     tech: ["React Native", "Firebase", "Redux", "REST API", "MongoDB"],
     // TODO: ADD MEMBER ICONS
     team: [],
-    // TODO: ADD IMAGES
-    image: "",
+    image: "./images/zenith-fitness.png",
   },
   {
     title: "A-AURA ECOMMERCE",
@@ -20,7 +19,6 @@ export const projects = [
     tech: ["Wordpress", "PHP", "HTML5", "CS3", "JavaScript"],
     // TODO: ADD MEMBER ICONS
     team: [],
-    // TODO: ADD IMAGES
-    image: "",
+    image: "./images/a-aura-ecommerce.png",
   },
 ];
