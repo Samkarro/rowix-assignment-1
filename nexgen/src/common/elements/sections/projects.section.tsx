@@ -74,8 +74,8 @@ export default function Projects() {
               <div className="project-center">
                 <img src={project.image} />
               </div>
-              <div className="project-right gray-box">
-                <div className="tech-container">
+              <div className="project-right">
+                <div className="tech-container gray-box">
                   <h4>TECHNOLOGIES USED</h4>
                   <div className="tech-tags">
                     {project.tech.map((techItem) => {
@@ -83,7 +83,7 @@ export default function Projects() {
                     })}
                   </div>
                 </div>
-                <div className="team-member-container">
+                <div className="team-member-container gray-box">
                   <h4>TEAM MEMBERS</h4>
                   <div className="team-box">
                     {project.team.map((member) => {
@@ -95,7 +95,7 @@ export default function Projects() {
                     })}
                   </div>
                 </div>
-                <div className="CTA">
+                <div className="cta clickable">
                   <p>BOOK A CALL</p>
                 </div>
               </div>
