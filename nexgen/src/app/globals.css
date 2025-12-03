@@ -60,6 +60,10 @@ textarea {
   transition: 200ms;
 }
 
+.outlined-box {
+  border: 2px solid var(--NexGen-Dark-12);
+}
+
 .clickable:hover {
   cursor: pointer;
 }

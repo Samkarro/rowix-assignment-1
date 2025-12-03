@@ -43,24 +43,24 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="hero-bottom">
-          <div className="achievement">
+        <div className="hero-bottom outlined-box">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">CLIENTS</p>
             <p className="achievement-amount">200+</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">PROJECTS</p>
             <p className="achievement-amount">280+</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">HAPPY CLIENTS</p>
             <p className="achievement-amount">100%</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">FOLLOWER</p>
             <p className="achievement-amount">420K</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">
               Years of Experience
             </p>
