@@ -1,5 +1,6 @@
 import { reasons } from "@/common/data/reasons";
 import "../../styles/reasons.styles.css";
+import OpenButton from "../open-button";
 
 export default function Reasons() {
   return (
@@ -10,15 +11,13 @@ export default function Reasons() {
       <div className="reasons-container">
         {reasons.map((reason) => {
           return (
-            <div className="reason">
+            <div className="reason gray-box">
               <div className="reason-text">
                 <h3>{reason.heading}</h3>
                 <p>{reason.text}</p>
               </div>
               <div className="learn-more-container">
-                <div className="open-button-container">
-                  <img alt="Open button." src="./images/top-right-arrow.png" />
-                </div>
+                <OpenButton />
                 <p>Learn More</p>
               </div>
             </div>

@@ -12,3 +12,105 @@
   padding: 50px;
   border-radius: 16px;
 }
+
+.reasons-container {
+  padding-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.reason {
+  border-radius: 14px;
+
+  min-height: 0px;
+  max-height: 500px;
+  height: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.reason-text {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reason p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-70);
+}
+
+.reason-text h3 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.learn-more-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: calc(100% - 80px);
+}
+
+@media (max-width: 1536px) {
+  #reasons {
+    width: calc((100% - 3rem) * 0.8);
+    max-width: calc(1820px * 0.8);
+    padding: calc(20px * 0.8);
+    border-radius: calc(24px * 0.8);
+  }
+
+  .reasons-heading-container {
+    padding: calc(50px * 0.8);
+    border-radius: calc(16px * 0.8);
+  }
+
+  .reasons-container {
+    padding-top: calc(20px * 0.8);
+    gap: calc(20px * 0.8);
+  }
+
+  .reason {
+    border-radius: calc(14px * 0.8);
+    padding: calc(40px * 0.8);
+    gap: calc(40px * 0.8);
+    max-height: calc(500px * 0.8);
+  }
+
+  .reason-text {
+    gap: calc(12px * 0.8);
+  }
+
+  .reason-text h3 {
+    font-size: calc(30px * 0.8);
+    line-height: calc(150% * 0.8);
+  }
+
+  .reason p {
+    font-size: calc(18px * 0.8);
+    line-height: 150%;
+  }
+
+  .learn-more-container {
+    width: calc((100% - 80px) * 0.8);
+    gap: calc(10px * 0.8);
+  }
+}
