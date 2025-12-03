@@ -118,8 +118,16 @@ section {
 }
 
 .lighter {
+  background-color: var(--NexGen-Dark-10);
+  border: 1px solid var(--NexGen-Dark-15);
+}
+
+.lightest {
   border: 1px solid var(--NexGen-Dark-20);
   background-color: var(--NexGen-Dark-15);
+}
+
+.smaller {
   height: 52px;
   width: 52px;
 }
@@ -159,7 +167,7 @@ section {
     margin-bottom: calc(120px * 0.8);
   }
 
-  .lighter {
+  .smaller {
     height: calc(52px * 0.8);
     width: calc(52px * 0.8);
   }

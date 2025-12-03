@@ -1,26 +1,25 @@
 import { projects } from "@/common/data/projects";
 import "../../styles/projects.styles.css";
+import OpenButton from "../open-button";
 
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="projects-heading-container">
+      <div className="projects-heading-container gray-box">
         <h2>OUR WORKS</h2>
-        <div>
-          <div className="open-button-container">
-            <img alt="Open button." src="./images/top-right-arrow.png" />
-          </div>
+        <div className="booking-button-container">
+          <OpenButton type={"lighter"} />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}
           >
-            BOOK A CALL
+            ALL WORKS
           </p>
         </div>
       </div>
       {projects.map((project) => {
         return (
-          <div className="project">
+          <div className="project outlined-box">
             <div className="project-left">
               <div className="project-top">
                 <div className="service-image-container">
