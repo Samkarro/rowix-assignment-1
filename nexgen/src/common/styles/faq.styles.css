@@ -21,3 +21,9 @@
   align-items: center;
   gap: 8px;
 }
+
+.faq-bottom {
+  display: grid;
+  grid-template-columns: 40fr 31fr;
+  gap: 20px;
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { MouseEventHandler, useState } from "react";
+import "../styles/faq-extras/question-list.css";
 
 export default function QuestionList() {
   const [questions, setQuestions] = useState([
@@ -47,12 +48,17 @@ export default function QuestionList() {
         };
 
         return (
-          <div className="question" key={question.prompt}>
+          <div
+            className={`question gray-box ${question.active ? "open" : ""}`}
+            key={question.prompt}
+          >
             <div
-              className="question-button clickable"
+              className="question-top clickable"
               onClick={() => toggleQuestion(index)}
             >
-              <p className="prompt">{question.prompt}</p>
+              <p className={`prompt ${question.active ? "prompt-active" : ""}`}>
+                {question.prompt}
+              </p>
               <svg
                 width="16"
                 height="16"
