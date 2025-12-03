@@ -1,0 +1,23 @@
+#faq {
+  width: calc(100% - 3rem);
+  max-width: 1820px;
+  min-width: min(1820px, calc(100% - 3rem));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-heading-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+}
+
+.more-questions-button-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

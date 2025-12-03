@@ -1,22 +1,20 @@
 import "../../styles/faq.styles.css";
+import OpenButton from "../open-button";
 import QuestionForm from "../question-form";
 import QuestionList from "../question-list";
 
 export default function Faq() {
   return (
     <section id="faq">
-      <div className="faq-heading-container">
+      <div className="faq-heading-container gray-box">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
-        {/* TODO: make this a module */}
-        <div className="upper-service-right">
-          <div className="open-button-container">
-            <img alt="Open button." src="./images/top-right-arrow.png" />
-          </div>
+        <div className="more-questions-button-container">
+          <OpenButton type={"lighter"} />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}
           >
-            DETAILS
+            VIEW ALL
           </p>
         </div>
       </div>
