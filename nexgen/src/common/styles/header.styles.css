@@ -76,6 +76,7 @@ header {
     height: calc(111px * 0.8);
     padding: calc(1.5rem * 0.8);
     margin-bottom: calc(20px * 0.8);
+    border-radius: calc(16px * 0.8);
   }
 
   .header-logo-container {
@@ -95,6 +96,7 @@ header {
     padding: calc(18px * 0.8) calc(24px * 0.8);
     max-height: calc(63px * 0.8);
     font-size: calc(18px * 0.8);
+    border-radius: calc(12px * 0.8);
     border-radius: calc(12px * 0.8);
   }
 }

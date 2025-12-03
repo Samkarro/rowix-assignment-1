@@ -2,6 +2,7 @@ import OpenCircle from "../../../../public/svg/open-circle";
 import OpenCircleForImage from "../../../../public/svg/open-circle-for-image";
 import "../../styles/hero.styles.css";
 import InfiniteScroll from "../infinite-scroll";
+import OpenButton from "../open-button";
 
 export default function Hero() {
   return (
@@ -43,36 +44,37 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="hero-bottom">
-          <div className="achievement">
+        <div className="hero-bottom outlined-box">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">CLIENTS</p>
             <p className="achievement-amount">200+</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">PROJECTS</p>
             <p className="achievement-amount">280+</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">HAPPY CLIENTS</p>
             <p className="achievement-amount">100%</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">FOLLOWER</p>
             <p className="achievement-amount">420K</p>
           </div>
-          <div className="achievement">
+          <div className="achievement gray-box">
             <p className="achievement-heading roboto-mono">
               Years of Experience
             </p>
             <p className="achievement-amount">10+</p>
           </div>
-          <div>
-            <div className="open-button-container">
-              <img alt="Open button." src="./images/top-right-arrow.png" />
-            </div>
+          <div
+            className="achievement gray-box"
+            style={{ flexDirection: "row" }}
+          >
+            <OpenButton />
             <p
               className="achievement-heading roboto-mono"
-              style={{ fontSize: "20px" }}
+              style={{ fontSize: "20px", gap: "10px" }}
             >
               KNOW MORE
             </p>

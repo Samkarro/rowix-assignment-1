@@ -60,6 +60,10 @@ textarea {
   transition: 200ms;
 }
 
+.outlined-box {
+  border: 2px solid var(--NexGen-Dark-12);
+}
+
 .clickable:hover {
   cursor: pointer;
 }
@@ -82,6 +86,32 @@ h3 {
   text-transform: uppercase;
 }
 
+section {
+  margin-bottom: 120px;
+}
+
+.open-button-container {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 60px;
+  border: 1px solid var(--NexGen-Dark-15);
+  background-color: var(--NexGen-Black);
+}
+
+.open-button-container:hover {
+  cursor: pointer;
+}
+
+.open-button-container img {
+  width: 28px;
+  height: 28px;
+}
+
 @media (max-width: 1536px) {
   h1 {
     font-size: calc(78px * 0.8);
@@ -93,5 +123,19 @@ h3 {
     font-size: calc(24px * 0.8);
     line-height: calc(150% * 0.8);
     letter-spacing: calc(0% * 0.8);
+  }
+
+  .open-button-container {
+    width: calc(68px * 0.8);
+    height: calc(68px * 0.8);
+  }
+
+  .open-button-container img {
+    width: calc(28px * 0.8);
+    height: calc(28px * 0.8);
+  }
+
+  section {
+    margin-bottom: calc(120px * 0.8);
   }
 }
