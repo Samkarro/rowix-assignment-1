@@ -17,7 +17,7 @@ export default function Reasons() {
                 <p>{reason.text}</p>
               </div>
               <div className="learn-more-container">
-                <OpenButton type={null} />
+                <OpenButton type={null} image="./images/top-right-arrow.png" />
                 <p>Learn More</p>
               </div>
             </div>

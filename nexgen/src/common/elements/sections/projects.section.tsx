@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="projects-heading-container gray-box">
         <h2>OUR WORKS</h2>
         <div className="booking-button-container">
-          <OpenButton type={"lighter"} />
+          <OpenButton type={"lighter"} image="./images/top-right-arrow.png" />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}
@@ -30,7 +30,10 @@ export default function Projects() {
                   </div>
 
                   <div className="upper-service-right">
-                    <OpenButton type={"lightest smaller"} />
+                    <OpenButton
+                      type={"lightest smaller"}
+                      image="./images/top-right-arrow.png"
+                    />
                     <p
                       className="achievement-heading roboto-mono"
                       style={{ fontSize: "20px" }}

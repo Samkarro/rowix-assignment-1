@@ -1,6 +1,8 @@
 "use client";
 
 import { MouseEventHandler, useState } from "react";
+import "../styles/faq-extras/question-list.css";
+import OpenButton from "./open-button";
 
 export default function QuestionList() {
   const [questions, setQuestions] = useState([
@@ -47,27 +49,23 @@ export default function QuestionList() {
         };
 
         return (
-          <div className="question" key={question.prompt}>
+          <div
+            className={`question gray-box ${question.active ? "open" : ""}`}
+            key={question.prompt}
+          >
             <div
-              className="question-button clickable"
+              className="question-top clickable"
               onClick={() => toggleQuestion(index)}
             >
-              <p className="prompt">{question.prompt}</p>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 6L8 10L12 6"
-                  stroke="#717182"
-                  strokeWidth="1.33333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <p className={`prompt ${question.active ? "prompt-active" : ""}`}>
+                {question.prompt}
+              </p>
+              <OpenButton
+                type={"lighter smaller"}
+                image={
+                  question.active ? "./images/minus.png" : "./images/plus.png"
+                }
+              />
             </div>
             {question.active === true && (
               <p className="answer">{question.answer}</p>
