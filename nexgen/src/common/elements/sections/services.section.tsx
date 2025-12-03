@@ -1,5 +1,6 @@
 import { services } from "@/common/data/services";
 import "../../styles/services.styles.css";
+import SquareLabel from "../square-label";
 
 export default function Services() {
   return (
@@ -13,9 +14,7 @@ export default function Services() {
             <div className="service gray-box">
               <div className="upper-area">
                 <div className="upper-service-left">
-                  <div className="service-image-container">
-                    <img src={service.image} />
-                  </div>
+                  <SquareLabel image={service.image} />
                   <h3>{service.heading}</h3>
                 </div>
                 <div className="upper-service-right">

@@ -1,0 +1,15 @@
+.square-label {
+  height: 66px;
+  width: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--NexGen-Dark-15);
+  border-radius: 12px;
+  border: 1px solid var(--NexGen-Dark-20);
+}
+
+.square-label img {
+  height: 34px;
+  width: 34px;
+}
