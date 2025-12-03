@@ -47,10 +47,10 @@ export default function NexGenNav() {
       </nav>
       <div className="newsletter-container gray-box">
         <div className="newsletter-cta-text-container">
-          <p className="newsletter-subheading">Newsletter</p>
+          <p className="newsletter-subheading roboto-mono">Newsletter</p>
           <h3>Subscribe to our newsletter</h3>
-          <NewsletterForm />
         </div>
+        <NewsletterForm />
       </div>
       <div className="copyright roboto-mono gray-box">
         <p>© 2024 NextGen. All rights reserved.</p>

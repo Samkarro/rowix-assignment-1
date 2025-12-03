@@ -50,3 +50,78 @@ nav {
   letter-spacing: -3%;
   border-radius: 6px;
 }
+
+.newsletter-container {
+  border-radius: 16px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsleter-cta-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-cta-text-container h3 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.newsletter-subheading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  color: var(--NexGen-Grey-40);
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsletter-form input {
+  border: none;
+  background: none;
+
+  color: var(--NexGen-White);
+
+  border-bottom: 1px solid var(--NexGen-Dark-20);
+  min-height: 63px;
+  width: 19vw;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.newsletter-form input:focus {
+  border-bottom: 1px solid var(--NexGen-White);
+  outline: none;
+}
+
+.newsletter-form input::placeholder {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-40);
+}
+
+.newsletter-send-button {
+  border: none;
+  background: none;
+}
