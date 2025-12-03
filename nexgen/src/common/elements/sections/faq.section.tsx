@@ -9,7 +9,10 @@ export default function Faq() {
       <div className="faq-heading-container gray-box">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <div className="more-questions-button-container">
-          <OpenButton type={"lighter"} />
+          <OpenButton
+            type={"lighter question-button"}
+            image={"./images/top-right-arrow.png"}
+          />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}

@@ -8,7 +8,7 @@ export default function Testimonials() {
       <div className="testimonials-heading-container gray-box">
         <h2>TESTIMONIALS</h2>
         <div className="testimonials-button-container">
-          <OpenButton type={"lighter"} />
+          <OpenButton type={"lighter"} image="./images/top-right-arrow.png" />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}
@@ -41,6 +41,7 @@ export default function Testimonials() {
                 </div>
                 <OpenButton
                   type={"lighter smaller testimonial-author-button"}
+                  image="./images/right-arrow.png"
                 />
               </div>
             </div>

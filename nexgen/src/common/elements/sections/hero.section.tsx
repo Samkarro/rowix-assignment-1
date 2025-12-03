@@ -71,7 +71,7 @@ export default function Hero() {
             className="achievement gray-box"
             style={{ flexDirection: "row" }}
           >
-            <OpenButton />
+            <OpenButton type={null} image="./images/top-right-arrow.png" />
             <p
               className="achievement-heading roboto-mono"
               style={{ fontSize: "20px", gap: "10px" }}

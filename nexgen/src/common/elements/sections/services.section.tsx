@@ -19,7 +19,10 @@ export default function Services() {
                   <h3>{service.heading}</h3>
                 </div>
                 <div className="upper-service-right">
-                  <OpenButton type={"lightest smaller"} />
+                  <OpenButton
+                    type={"lightest smaller"}
+                    image="./images/top-right-arrow.png"
+                  />
                   <p
                     className="achievement-heading roboto-mono"
                     style={{ fontSize: "20px" }}
