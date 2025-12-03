@@ -2,6 +2,8 @@ import { socials } from "@/common/data/socials";
 import NewsletterForm from "../newsletter-form";
 import "../../styles/contact.styles.css";
 import InfiniteScroll from "../infinite-scroll";
+import SquareLabel from "../square-label";
+import OpenButton from "../open-button";
 
 export default function Contact() {
   return (
@@ -29,16 +31,14 @@ export default function Contact() {
             return (
               <div className="social-medium-card gray-box">
                 <div className="medium-top">
-                  <div className="medium-image-container">
-                    <img src={medium.image} />
-                  </div>
+                  <SquareLabel image={medium.image} />
                   <div className="upper-service-right">
-                    <div className="open-button-container">
-                      <img
-                        alt="Open button."
-                        src="./images/top-right-arrow.png"
-                      />
-                    </div>
+                    <OpenButton
+                      type={
+                        "lighter smaller lighter-border testimonial-author-button"
+                      }
+                      image="./images/top-right-arrow.png"
+                    />
                   </div>
                 </div>
                 <div className="social-medium-card-text">

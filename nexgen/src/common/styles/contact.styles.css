@@ -89,10 +89,46 @@
 
 .social-medium-card {
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  height: 337px;
+  max-width: 364px;
 }
 
 .nav-and-copyright {
   display: grid;
   grid-template-rows: 16fr 10fr 6fr;
   gap: 20px;
+}
+
+.medium-top {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.social-medium-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-medium-card-text h3 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.social-medium-card-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-70);
 }
