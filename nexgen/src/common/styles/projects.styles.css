@@ -21,3 +21,22 @@
   align-items: center;
   gap: 8px;
 }
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.project-left,
+.project-right,
+.project-center {
+  border-radius: 14px;
+}
