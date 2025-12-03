@@ -1,5 +1,4 @@
 import { projects } from "@/common/data/projects";
-import { reasons } from "@/common/data/reasons";
 import { services } from "@/common/data/services";
 import { socials } from "@/common/data/socials";
 import { testimonials } from "@/common/data/testimonials";
@@ -8,6 +7,7 @@ import NewsletterForm from "@/common/elements/newsletter-form";
 import QuestionForm from "@/common/elements/question-form";
 import QuestionList from "@/common/elements/question-list";
 import Hero from "@/common/elements/sections/hero.section";
+import Reasons from "@/common/elements/sections/reasons.section";
 
 export default function Home() {
   return (
@@ -15,32 +15,7 @@ export default function Home() {
       <NexGenHeader />
       <main>
         <Hero />
-        <section id="reasons">
-          <div className="reasons-heading-container">
-            <h2>REASONS TO CHOOSE NEXGEN FOR YOUR DIGITAL JOURNEY</h2>
-          </div>
-          <div className="reasons-container">
-            {reasons.map((reason) => {
-              return (
-                <div className="reason">
-                  <div className="reason-text">
-                    <h3>{reason.heading}</h3>
-                    <p>{reason.text}</p>
-                  </div>
-                  <div className="learn-more-container">
-                    <div className="open-button-container">
-                      <img
-                        alt="Open button."
-                        src="./images/top-right-arrow.png"
-                      />
-                    </div>
-                    <p>Learn More</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+        <Reasons />
         <section id="services">
           <div className="services-heading-container">
             <h2>OUR SERVICES</h2>
