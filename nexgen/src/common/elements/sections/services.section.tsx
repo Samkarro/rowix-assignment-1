@@ -33,9 +33,11 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-              <div className="lower-service">
-                <p>{service.description}</p>
-                <p className="service-price">{service.startingPrice}</p>
+              <div className="lower-area">
+                <p className="service-description">{service.description}</p>
+                <p className="service-price">
+                  starts from ${service.startingPrice}
+                </p>
               </div>
             </div>
           );

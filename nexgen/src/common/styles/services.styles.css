@@ -30,3 +30,41 @@
   flex-direction: column;
   gap: 50px;
 }
+
+.upper-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.upper-service-left,
+.upper-service-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.upper-service-left {
+  gap: 14px;
+}
+
+.service-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-70);
+}
+
+.service-price {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: var(--NexGen-White);
+}
