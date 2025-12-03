@@ -1,0 +1,28 @@
+.square-label {
+  height: 66px;
+  width: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--NexGen-Dark-15);
+  border-radius: 12px;
+  border: 1px solid var(--NexGen-Dark-20);
+}
+
+.square-label img {
+  height: 34px;
+  width: 34px;
+}
+
+@media (max-width: 1536px) {
+  .square-label {
+    height: calc(66px * 0.8);
+    width: calc(66px * 0.8);
+    border-radius: calc(12px * 0.8);
+  }
+
+  .square-label img {
+    height: calc(34px * 0.8);
+    width: calc(34px * 0.8);
+  }
+}
