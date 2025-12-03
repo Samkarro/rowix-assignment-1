@@ -44,3 +44,33 @@
 .prompt-active {
   margin-bottom: 30px;
 }
+
+@media (max-width: 1536px) {
+  .question {
+    border-radius: calc(16px * 0.8);
+    padding: calc(45px * 0.8) calc(60px * 0.8);
+  }
+
+  .open {
+    padding: calc(53px * 0.8) calc(60px * 0.8);
+  }
+
+  .question-list {
+    gap: calc(20px * 0.8);
+  }
+
+  .prompt {
+    font-size: calc(22px * 0.8);
+  }
+
+  .answer {
+    font-size: calc(18px * 0.8);
+    padding-top: calc(30px * 0.8);
+
+    width: calc(100% - calc(90px * 0.8));
+  }
+
+  .prompt-active {
+    margin-bottom: calc(30px * 0.8);
+  }
+}

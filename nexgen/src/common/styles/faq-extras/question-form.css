@@ -36,8 +36,10 @@
   letter-spacing: 0%;
   text-transform: uppercase;
 }
-.question-form input {
-  margin-bottom: 20px;
+
+.question-form input,
+textarea {
+  margin-bottom: 50px;
   width: 100%;
   height: 75px;
   outline: none;
@@ -56,24 +58,6 @@
 
 .question-form input::placeholder {
   color: var(--NexGen-Grey-40);
-}
-
-textarea {
-  margin-bottom: 50px;
-  width: 100%;
-  height: 75px;
-  outline: none;
-  border: none;
-  background-color: var(--NexGen-Black);
-  border-radius: 10px;
-  padding: 24px;
-
-  color: var(--NexGen-White);
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0%;
 }
 
 .question-submit-button {
@@ -98,4 +82,36 @@ textarea {
   transition: 200ms;
   background-color: var(--NexGen-White);
   cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+  .question-form {
+    padding: calc(60px * 0.8);
+    gap: calc(50px * 0.8);
+    border-radius: calc(14px * 0.8);
+  }
+
+  .question-form h4 {
+    font-size: calc(24px * 0.8);
+  }
+
+  .question-form label {
+    font-size: calc(18px * 0.8);
+    margin-bottom: calc(10px * 0.8);
+  }
+
+  .question-form input,
+  textarea {
+    height: calc(75px * 0.8);
+    border-radius: calc(10px * 0.8);
+    padding: calc(24px * 0.8);
+    margin-bottom: calc(50px * 0.8);
+    font-size: calc(18px * 0.8);
+  }
+
+  .question-submit-button {
+    height: calc(63px * 0.8);
+    border-radius: calc(12px * 0.8);
+    font-size: calc(18px * 0.8);
+  }
 }
