@@ -1,9 +1,9 @@
 import { socials } from "@/common/data/socials";
-import NewsletterForm from "../newsletter-form";
 import "../../styles/contact.styles.css";
 import InfiniteScroll from "../infinite-scroll";
 import SquareLabel from "../square-label";
 import OpenButton from "../open-button";
+import NexGenNav from "../NexGenNav";
 
 export default function Contact() {
   return (
@@ -49,64 +49,7 @@ export default function Contact() {
             );
           })}
         </div>
-        <div className="nav-and-copyright">
-          {/* make this a module */}
-          <nav className="gray-box">
-            <div className="nav-column">
-              <p className="roboto-mono">Home</p>
-              <div className="nav-button-list">
-                <a href="#reasons">Why Us</a>
-                <a href="#hero">About Us</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#faq">FAQ's</a>
-              </div>
-            </div>
-            <div className="nav-column">
-              <p className="roboto-mono">Services</p>
-              <div className="nav-button-list">
-                <a href="#services">Web Development</a>
-                <a href="#services">App Development</a>
-                <a href="#services">Web Design</a>
-                <a href="#services">Digital Marketing</a>
-              </div>
-            </div>
-            <div className="nav-column">
-              <p className="roboto-mono">Projects</p>
-              <div className="nav-button-list">
-                <a>Klothink</a>
-                <a>Zenith</a>
-                <a>Novus</a>
-                <a>Apex</a>
-              </div>
-            </div>
-            <div className="nav-column">
-              <p className="roboto-mono">Blogs</p>
-              <div className="nav-button-list">
-                <a>Business</a>
-                <a>
-                  Design<div className="soon-label">Soon</div>
-                </a>
-                <a>
-                  Developmment<div className="soon-label">Soon</div>
-                </a>
-              </div>
-            </div>
-          </nav>
-          <div className="newsletter-container gray-box">
-            <div className="newsletter-cta-text-container">
-              <p className="newsletter-subheading">Newsletter</p>
-              <h3>Subscribe to our newsletter</h3>
-              <NewsletterForm />
-            </div>
-          </div>
-          <div className="copyright roboto-mono gray-box">
-            <p>© 2024 NextGen. All rights reserved.</p>
-            <div className="copyright-buttons">
-              <a>Terms & Conditions</a>
-              <a>Privacy Policy</a>
-            </div>
-          </div>
-        </div>
+        <NexGenNav />
       </div>
     </section>
   );
