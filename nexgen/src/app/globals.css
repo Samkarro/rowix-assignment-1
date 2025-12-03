@@ -8,7 +8,7 @@
   --NexGen-Orange-70: #da9e8b;
   --NexGen-Orange-80: #e7beb1;
   --NexGen-Dark-10: #1a1a1a;
-  --NexGen-Dark-12: #1c1c21;
+  --NexGen-Dark-12: #1f1f1f;
   --NexGen-Dark-15: #262626;
   --NexGen-Dark-20: #333333;
   --NexGen-Grey-40: #676665;
@@ -118,8 +118,16 @@ section {
 }
 
 .lighter {
+  background-color: var(--NexGen-Dark-12);
+  border: 1px solid var(--NexGen-Dark-15);
+}
+
+.lightest {
   border: 1px solid var(--NexGen-Dark-20);
-  background-color: var(--NexGen-Dark-15);
+  background-color: var(--NexGen-Dark-12);
+}
+
+.smaller {
   height: 52px;
   width: 52px;
 }
@@ -159,7 +167,7 @@ section {
     margin-bottom: calc(120px * 0.8);
   }
 
-  .lighter {
+  .smaller {
     height: calc(52px * 0.8);
     width: calc(52px * 0.8);
   }
