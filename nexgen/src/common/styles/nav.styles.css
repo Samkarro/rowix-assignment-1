@@ -125,3 +125,111 @@ nav {
   border: none;
   background: none;
 }
+
+.copyright {
+  border-radius: 16px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-buttons {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--NexGen-Grey-70);
+  display: flex;
+  gap: 11px;
+}
+
+.copyright-buttons a {
+  transition: 200ms;
+}
+.copyright-buttons a:hover {
+  cursor: pointer;
+  color: var(--NexGen-Grey-90);
+  transition: 200ms;
+}
+
+.copyright-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-70);
+}
+
+@media (max-width: 1536px) {
+  nav {
+    border-radius: calc(20px * 0.8);
+    padding: calc(60px * 0.8);
+    min-width: calc(188px * 0.8);
+  }
+
+  .nav-column p {
+    margin-bottom: calc(30px * 0.8);
+    font-size: calc(22px * 0.8);
+  }
+
+  .nav-button-list {
+    gap: calc(18px * 0.8);
+  }
+
+  .nav-button-list a {
+    font-size: calc(18px * 0.8);
+  }
+
+  .soon-label {
+    margin-left: calc(8px * 0.8);
+    padding: calc(4px * 0.8) calc(12px * 0.8);
+    font-size: calc(16px * 0.8);
+    border-radius: calc(6px * 0.8);
+  }
+
+  .newsletter-container {
+    border-radius: calc(16px * 0.8);
+    padding: calc(50px * 0.8);
+  }
+
+  .newsleter-cta-text-container {
+    gap: calc(10px * 0.8);
+  }
+
+  .newsletter-cta-text-container h3 {
+    font-size: calc(30px * 0.8);
+  }
+
+  .newsletter-subheading {
+    font-size: calc(18px * 0.8);
+  }
+
+  .newsletter-form {
+    gap: calc(20px * 0.8);
+  }
+
+  .newsletter-form input {
+    min-height: calc(63px * 0.8);
+    font-size: calc(18px * 0.8);
+    width: calc(19vw * 0.8);
+  }
+
+  .newsletter-form input::placeholder {
+    font-size: calc(18px * 0.8);
+  }
+
+  .copyright {
+    border-radius: calc(16px * 0.8);
+    padding: calc(50px * 0.8);
+  }
+
+  .copyright-buttons {
+    font-size: calc(18px * 0.8);
+    gap: calc(11px * 0.8);
+  }
+
+  .copyright-text {
+    font-size: calc(18px * 0.8);
+  }
+}

@@ -53,9 +53,25 @@ export default function NexGenNav() {
         <NewsletterForm />
       </div>
       <div className="copyright roboto-mono gray-box">
-        <p>© 2024 NextGen. All rights reserved.</p>
+        <p className="copyright-text">© 2024 NextGen. All rights reserved.</p>
         <div className="copyright-buttons">
           <a>Terms & Conditions</a>
+          <svg
+            width="1"
+            height="27"
+            viewBox="0 0 1 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="0.5"
+              y1="2.18557e-08"
+              x2="0.499999"
+              y2="27"
+              stroke="#232329"
+            />
+          </svg>
+
           <a>Privacy Policy</a>
         </div>
       </div>

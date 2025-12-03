@@ -89,4 +89,9 @@
     min-width: calc(7px * 0.8);
     min-height: calc(7px * 0.8);
   }
+
+  .scroll-type-two {
+    margin-top: calc(20px * 0.8);
+    min-width: min(1820px, 100%);
+  }
 }
