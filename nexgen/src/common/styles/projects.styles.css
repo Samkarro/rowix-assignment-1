@@ -132,14 +132,12 @@
   gap: 20px;
 }
 
-.project-right div {
-  border-radius: 14px;
-}
-
 .project-right .cta {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 12px;
 }
 
 .project-right .cta p {
@@ -155,4 +153,43 @@
 .project-right .cta:hover {
   background-color: var(--NexGen-White);
   transition: 200ms;
+}
+
+.team-member-container {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+
+  gap: 40px;
+}
+
+.team-member-container h4 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding-left: 7.2%;
+}
+
+.team-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-member {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: var(--NexGen-Orange-80);
+}
+
+.team-member img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+  filter: grayscale();
 }
