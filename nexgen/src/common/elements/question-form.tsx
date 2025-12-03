@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import "../styles/faq-extras/question-form.css";
 
 export default function QuestionForm() {
   const [name, setName] = useState("");
@@ -7,7 +8,7 @@ export default function QuestionForm() {
   const [body, setBody] = useState("");
 
   return (
-    <div className="question-form">
+    <div className="question-form gray-box">
       <h4>ASK YOUR QUESTION</h4>
       <hr />
       <form>

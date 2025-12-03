@@ -6,7 +6,7 @@
 
 .question {
   border-radius: 16px;
-  padding: 60px;
+  padding: 45px 60px;
 }
 
 .open {
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: min-content;
 }
 
 .prompt {

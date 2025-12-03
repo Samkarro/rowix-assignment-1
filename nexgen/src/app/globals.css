@@ -48,6 +48,19 @@ a {
 
 textarea {
   resize: none;
+  font-family: "Roboto Flex", monospace;
+  min-height: 172px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: var(--NexGen-Grey-40);
 }
 
 .gray-box {
