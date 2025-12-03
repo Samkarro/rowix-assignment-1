@@ -9,6 +9,7 @@ export const projects = [
     // TODO: ADD MEMBER ICONS
     team: [],
     image: "./images/zenith-fitness.png",
+    iconImage: "./images/zenith-fitness-icon.png",
   },
   {
     title: "A-AURA ECOMMERCE",
@@ -20,5 +21,6 @@ export const projects = [
     // TODO: ADD MEMBER ICONS
     team: [],
     image: "./images/a-aura-ecommerce.png",
+    iconImage: "./images/a-aura-ecommerce-icon.png",
   },
 ];

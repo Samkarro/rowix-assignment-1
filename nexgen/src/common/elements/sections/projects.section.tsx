@@ -1,6 +1,7 @@
 import { projects } from "@/common/data/projects";
 import "../../styles/projects.styles.css";
 import OpenButton from "../open-button";
+import SquareLabel from "../square-label";
 
 export default function Projects() {
   return (
@@ -22,18 +23,14 @@ export default function Projects() {
           return (
             <div className="project outlined-box">
               <div className="project-left gray-box">
-                <div className="project-top">
-                  <div className="service-image-container">
-                    {/* <img src={project.serviceImage} /> */}
+                <div className="project-left-top">
+                  <div className="project-title-container">
+                    <SquareLabel image={project.iconImage} />
+                    <h3>{project.title}</h3>
                   </div>
-                  <h3>{project.title}</h3>
+
                   <div className="upper-service-right">
-                    <div className="open-button-container">
-                      <img
-                        alt="Open button."
-                        src="./images/top-right-arrow.png"
-                      />
-                    </div>
+                    <OpenButton type={"lightest smaller"} />
                     <p
                       className="achievement-heading roboto-mono"
                       style={{ fontSize: "20px" }}
@@ -45,10 +42,30 @@ export default function Projects() {
                 <div className="tags-container">
                   <div className="project-tag">
                     <p className="tag-name">Category</p>
+                    <svg
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#CE7D63" />
+                    </svg>
+
                     <p className="tag-title">{project.category}</p>
                   </div>
                   <div className="project-tag">
                     <p className="tag-name">Time Taken</p>
+                    <svg
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#CE7D63" />
+                    </svg>
+
                     <p className="tag-title">{project.timeTaken}</p>
                   </div>
                 </div>
