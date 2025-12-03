@@ -79,7 +79,11 @@ export default function Projects() {
                   <h4>TECHNOLOGIES USED</h4>
                   <div className="tech-tags">
                     {project.tech.map((techItem) => {
-                      return <p>{techItem}</p>;
+                      return (
+                        <div className="tech-tag">
+                          <p className="roboto-mono">{techItem}</p>
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
