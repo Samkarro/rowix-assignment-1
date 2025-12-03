@@ -1,6 +1,7 @@
 import { services } from "@/common/data/services";
 import "../../styles/services.styles.css";
 import SquareLabel from "../square-label";
+import OpenButton from "../open-button";
 
 export default function Services() {
   return (
@@ -18,12 +19,7 @@ export default function Services() {
                   <h3>{service.heading}</h3>
                 </div>
                 <div className="upper-service-right">
-                  <div className="open-button-container">
-                    <img
-                      alt="Open button."
-                      src="./images/top-right-arrow.png"
-                    />
-                  </div>
+                  <OpenButton type={"lighter"} />
                   <p
                     className="achievement-heading roboto-mono"
                     style={{ fontSize: "20px" }}

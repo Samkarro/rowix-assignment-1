@@ -17,7 +17,7 @@ export default function Reasons() {
                 <p>{reason.text}</p>
               </div>
               <div className="learn-more-container">
-                <OpenButton />
+                <OpenButton type={null} />
                 <p>Learn More</p>
               </div>
             </div>
