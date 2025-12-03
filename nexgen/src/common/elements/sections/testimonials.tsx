@@ -1,14 +1,14 @@
 import { testimonials } from "@/common/data/testimonials";
+import "../../styles/testimonials.styles.css";
+import OpenButton from "../open-button";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials">
-      <div className="testimonials-heading-container">
+    <section id="testimonials" className="outlined-box">
+      <div className="testimonials-heading-container gray-box">
         <h2>TESTIMONIALS</h2>
-        <div className="upper-service-right">
-          <div className="open-button-container">
-            <img alt="Open button." src="./images/top-right-arrow.png" />
-          </div>
+        <div className="testimonials-button-container">
+          <OpenButton type={"lighter"} />
           <p
             className="achievement-heading roboto-mono"
             style={{ fontSize: "20px" }}
