@@ -1,0 +1,32 @@
+#services {
+  width: calc(100% - 3rem);
+  max-width: 1820px;
+  min-width: min(1820px, calc(100% - 3rem));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  border-radius: 24px;
+}
+
+.services-heading-container {
+  padding: 50px;
+  border-radius: 16px;
+}
+
+.services-container {
+  padding-top: 20px;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service {
+  border-radius: 14px;
+  padding: 80px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
