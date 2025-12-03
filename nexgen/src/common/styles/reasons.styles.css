@@ -1,0 +1,14 @@
+#reasons {
+  width: calc(100% - 3rem);
+  max-width: 1820px;
+  min-width: min(1820px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 24px;
+}
+
+.reasons-heading-container {
+  padding: 50px;
+  border-radius: 16px;
+}

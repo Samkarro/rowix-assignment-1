@@ -1,9 +1,10 @@
 import { reasons } from "@/common/data/reasons";
+import "../../styles/reasons.styles.css";
 
 export default function Reasons() {
   return (
-    <section id="reasons">
-      <div className="reasons-heading-container">
+    <section id="reasons" className="outlined-box">
+      <div className="reasons-heading-container gray-box">
         <h2>REASONS TO CHOOSE NEXGEN FOR YOUR DIGITAL JOURNEY</h2>
       </div>
       <div className="reasons-container">

@@ -77,6 +77,15 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
 h3 {
   font-weight: 500;
   font-style: Medium;
@@ -116,13 +125,16 @@ section {
   h1 {
     font-size: calc(78px * 0.8);
     line-height: calc(150% * 0.8);
-    letter-spacing: calc(0% * 0.8);
+  }
+
+  h2 {
+    font-size: calc(48px * 0.8);
+    line-height: calc(100% * 0.8);
   }
 
   h3 {
     font-size: calc(24px * 0.8);
     line-height: calc(150% * 0.8);
-    letter-spacing: calc(0% * 0.8);
   }
 
   .open-button-container {
