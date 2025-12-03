@@ -25,7 +25,7 @@ export default function Hero() {
               </p>
             </div>
             {/* TODO: implement scrolling banner */}
-            <InfiniteScroll />
+            <InfiniteScroll type={null} />
           </div>
           <div className="featured-product">
             <div className="image-container">

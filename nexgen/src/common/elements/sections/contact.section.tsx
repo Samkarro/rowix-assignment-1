@@ -1,6 +1,7 @@
 import { socials } from "@/common/data/socials";
 import NewsletterForm from "../newsletter-form";
 import "../../styles/contact.styles.css";
+import InfiniteScroll from "../infinite-scroll";
 
 export default function Contact() {
   return (
@@ -22,17 +23,7 @@ export default function Contact() {
         </div>
       </div>
       {/* TODO: implement scrolling banner */}
-      <div className="scrolling-banner">
-        <svg
-          width="7"
-          height="7"
-          viewBox="0 0 7 7"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="3.5" cy="3.5" r="3.5" fill="#CE7D63" />
-        </svg>
-      </div>
+      <InfiniteScroll type={"scroll-type-two"} />
       <div className="major-navigation-container">
         <div className="socials-container">
           {socials.map((medium) => {

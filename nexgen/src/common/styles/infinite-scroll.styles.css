@@ -1,10 +1,11 @@
 .scroll {
   position: relative;
 
-  justify-self: end;
   width: 100%;
-  max-width: 1167px;
-  min-width: 0;
+  max-width: 1820px;
+  min-width: min(1820px, calc(100% - 3rem));
+  margin-left: auto;
+  margin-right: auto;
 
   overflow: hidden;
   --t: 20s;
@@ -13,7 +14,11 @@
 
   border-radius: 12px;
 
-  margin-top: 90px;
+  margin: 20px 0px;
+}
+
+.scroll-type-two {
+  background-color: var(--NexGen-Dark-10);
 }
 
 .scroll div {
