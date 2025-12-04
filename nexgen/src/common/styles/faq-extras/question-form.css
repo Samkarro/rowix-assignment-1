@@ -39,7 +39,7 @@
 
 .question-form input,
 textarea {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 100%;
   height: 75px;
   outline: none;
@@ -54,6 +54,10 @@ textarea {
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0%;
+}
+
+textarea {
+  margin-bottom: 50px;
 }
 
 .question-form input::placeholder {
@@ -105,7 +109,7 @@ textarea {
     height: calc(75px * 0.8);
     border-radius: calc(10px * 0.8);
     padding: calc(24px * 0.8);
-    margin-bottom: calc(50px * 0.8);
+    margin-bottom: calc(20px * 0.8);
     font-size: calc(18px * 0.8);
   }
 

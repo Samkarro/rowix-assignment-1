@@ -27,3 +27,19 @@
   grid-template-columns: 40fr 31fr;
   gap: 20px;
 }
+
+@media (max-width: 1536px) {
+  .faq-heading-container {
+    padding: calc(50px * 0.8);
+    border-radius: calc(16px * 0.8);
+    margin-bottom: calc(20px * 0.8);
+  }
+
+  .more-questions-button-container {
+    gap: calc(8px * 0.8);
+  }
+
+  .faq-bottom {
+    gap: calc(20px * 0.8);
+  }
+}

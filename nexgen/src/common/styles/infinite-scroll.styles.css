@@ -1,10 +1,11 @@
 .scroll {
   position: relative;
 
-  justify-self: end;
   width: 100%;
-  max-width: 1167px;
-  min-width: 0;
+  max-width: 1820px;
+  min-width: min(1820px, calc(100% - 3rem));
+  margin-left: auto;
+  margin-right: auto;
 
   overflow: hidden;
   --t: 20s;
@@ -13,41 +14,39 @@
 
   border-radius: 12px;
 
-  margin-top: 90px;
+  margin: 20px 0px;
+
+  display: flex;
+  user-select: none;
+}
+
+.scroll-type-two {
+  background-color: var(--NexGen-Dark-10);
 }
 
 .scroll div {
+  margin-block: 10px;
   white-space: nowrap;
-  animation: animate var(--t) linear infinite;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  animation: animate var(--t) linear infinite;
+
+  flex-shrink: 0;
+
+  min-width: 100%;
+
+  animation: scroll var(--t) linear infinite;
 }
 
-.scroll div:nth-child(2) {
-  animation: animate2 var(--t) linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
+@keyframes scroll {
+  to {
     transform: translateX(-100%);
-  }
-}
-
-@keyframes animate2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%);
   }
 }
 
 .scroll div span {
   display: inline-flex;
-  margin: 10px;
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -59,11 +58,20 @@
   line-height: 150%;
   letter-spacing: 0%;
   text-transform: uppercase;
+
+  margin-inline: 10px;
 }
 
 .circle {
   min-height: 7px;
   min-width: 7px;
+}
+
+.bottom {
+  margin: 20px 0px 0px 0px;
+}
+.bottom span {
+  margin-inline: none;
 }
 
 @media (max-width: 1536px) {
@@ -83,5 +91,10 @@
   .circle {
     min-width: calc(7px * 0.8);
     min-height: calc(7px * 0.8);
+  }
+
+  .scroll-type-two {
+    margin-top: calc(20px * 0.8);
+    min-width: min(1820px, 100%);
   }
 }

@@ -11,9 +11,8 @@ export default function Hero() {
         <div className="hero-top-container">
           <div className="about-container gray-box">
             <div className="about-headings-container">
-              {/* TODO: fiddle around with the svg */}
               <h1 className="about-heading">
-                DIGITAL SOLUTIONS <OpenCircle></OpenCircle>{" "}
+                DIGITAL SOLUTIONS <OpenCircle></OpenCircle>
                 <p className="open-circle-text clickable">start a project</p>
               </h1>
               <h1 className="about-heading">THAT DRIVE SUCCESS</h1>
@@ -24,12 +23,10 @@ export default function Hero() {
                 landscape.
               </p>
             </div>
-            {/* TODO: implement scrolling banner */}
-            <InfiniteScroll />
+            <InfiniteScroll type={null} />
           </div>
           <div className="featured-product">
             <div className="image-container">
-              {/* TODO: implement svg */}
               <div className="image-svg-wrapper clickable">
                 <OpenCircleForImage></OpenCircleForImage>
               </div>
