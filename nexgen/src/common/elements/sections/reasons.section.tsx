@@ -11,7 +11,7 @@ export default function Reasons() {
       <div className="reasons-container">
         {reasons.map((reason) => {
           return (
-            <div className="reason gray-box">
+            <div className="reason gray-box" key={reason.heading}>
               <div className="reason-text">
                 <h3>{reason.heading}</h3>
                 <p>{reason.text}</p>

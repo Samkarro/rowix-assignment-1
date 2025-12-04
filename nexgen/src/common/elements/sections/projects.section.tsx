@@ -21,7 +21,7 @@ export default function Projects() {
       <div className="projects-container">
         {projects.map((project) => {
           return (
-            <div className="project outlined-box">
+            <div className="project outlined-box" key={project.title}>
               <div className="project-left gray-box">
                 <div className="project-left-top">
                   <div className="project-title-container">
@@ -83,7 +83,7 @@ export default function Projects() {
                   <div className="tech-tags">
                     {project.tech.map((techItem) => {
                       return (
-                        <div className="tech-tag">
+                        <div className="tech-tag" key={techItem}>
                           <p className="roboto-mono">{techItem}</p>
                         </div>
                       );
@@ -93,9 +93,9 @@ export default function Projects() {
                 <div className="team-member-container gray-box">
                   <h4>TEAM MEMBERS</h4>
                   <div className="team-box">
-                    {project.team.map((member) => {
+                    {project.team.map((member, index) => {
                       return (
-                        <div className="team-member">
+                        <div className="team-member" key={index}>
                           <img src={member} />
                         </div>
                       );

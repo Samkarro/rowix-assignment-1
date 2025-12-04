@@ -12,7 +12,7 @@ export default function Services() {
       <div className="services-container">
         {services.map((service) => {
           return (
-            <div className="service gray-box">
+            <div className="service gray-box" key={service.heading}>
               <div className="upper-area">
                 <div className="upper-service-left">
                   <SquareLabel image={service.image} />

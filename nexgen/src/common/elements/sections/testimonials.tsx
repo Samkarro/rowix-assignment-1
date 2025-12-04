@@ -18,9 +18,9 @@ export default function Testimonials() {
         </div>
       </div>
       <div className="testimonials-container">
-        {testimonials.map((testimonial) => {
+        {testimonials.map((testimonial, index) => {
           return (
-            <div className="testimonial">
+            <div className="testimonial" key={index}>
               <div className="testimonial-top gray-box">
                 <h4>{testimonial?.title}</h4>
                 <p>{testimonial?.body}</p>

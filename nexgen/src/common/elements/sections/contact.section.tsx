@@ -27,9 +27,9 @@ export default function Contact() {
       <InfiniteScroll type={"scroll-type-two"} />
       <div className="major-navigation-container">
         <div className="socials-container">
-          {socials.map((medium) => {
+          {socials.map((medium, index) => {
             return (
-              <div className="social-medium-card gray-box">
+              <div className="social-medium-card gray-box" key={index}>
                 <div className="medium-top">
                   <SquareLabel image={medium.image} />
                   <div className="upper-service-right">
