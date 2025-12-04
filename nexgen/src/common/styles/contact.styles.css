@@ -100,7 +100,7 @@
 
 .nav-and-copyright {
   display: grid;
-  grid-template-rows: 16fr 10fr 6fr;
+  grid-template-rows: 16fr 9fr 6fr;
   gap: 20px;
 }
 
@@ -182,6 +182,7 @@
 
   .nav-and-copyright {
     gap: calc(20px * 0.8);
+    grid-template-rows: 16fr 8fr 6.5fr;
   }
 
   .social-medium-card-text {

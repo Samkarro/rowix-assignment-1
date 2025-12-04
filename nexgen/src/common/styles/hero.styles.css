@@ -263,4 +263,22 @@
   .achievement-amount {
     font-size: calc(60px * 0.8);
   }
+
+  .hero-bottom {
+    min-height: calc(190px * 0.8);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .achievement {
+    max-width: calc(280px * 0.8);
+    min-height: calc(150px * 0.8);
+  }
+
+  .achievement-heading {
+    line-height: calc(150% * 0.8);
+  }
+
+  .achievement-amount {
+    line-height: calc(100% * 0.8);
+  }
 }
